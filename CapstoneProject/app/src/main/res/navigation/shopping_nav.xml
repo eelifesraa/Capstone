@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopping_nav"
+    app:startDestination="@id/mainPageFragment3">
+    <fragment
+        android:id="@+id/mainPageFragment3"
+        android:name="com.info.upschoolcapstone1.MainPageFragment"
+        android:label="MainPageFragment" >
+        <action
+            android:id="@+id/action_mainPageFragment3_to_productCardFragment"
+            app:destination="@id/productCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productCardFragment"
+        android:name="com.example.capstoneproject.ProductCardFragment"
+        android:label="fragment_product_card"
+        tools:layout="@layout/fragment_product_card" />
+</navigation>
